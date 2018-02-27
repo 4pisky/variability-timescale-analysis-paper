@@ -10,7 +10,6 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-j', '--jsonfilespath', action='store', type=str, help='Directory in which output files (*_flares.json) from flare finder are stored.', default='results/*/')
     parser.add_argument('-t', '--targetsfilepath', action='store', type=str, help='Directory in which target-distances-and-class.txt file is stored.', default='')
-    parser.add_argument('-s', '--step', action='store', type=float, help='Logarithmic timestep over which to average the probability tables.', default=0.5)
     args = parser.parse_args()
 
 
